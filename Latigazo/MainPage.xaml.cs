@@ -1,6 +1,6 @@
-﻿using CommunityToolkit.Maui;
-using CommunityToolkit.Maui.Views;
-using Plugin.Maui.Audio;
+﻿using Plugin.Maui.Audio;
+
+#pragma warning disable CS8622
 
 namespace Latigazo
 {
@@ -45,7 +45,7 @@ namespace Latigazo
             }
             catch (Exception ex)
             {
-                DisplayAlert("Error", ex.Message, "OK");
+                await DisplayAlert("Error", ex.Message, "OK");
             }
         }
     }
